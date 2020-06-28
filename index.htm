@@ -1,52 +1,73 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="ptbr">
     <head>
-    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="indexCalc_style.css">
+        <title>~ Calculadora ~</title>
+
     </head>
+
     <body>
-        <div id="display"> </div>
-        <button id="soma">+</button>
-        <button id="numeroUm">1</button>
-        <button id="igual">=</button>
 
-        <script>
-            //objeto calculadora
-            let calculadora = {};
-            calculadora.display = document.querySelector("#display");
-
-            let botaoUm = document.querySelector("#numeroUm");
-            let botaoSoma = document.querySelector("#soma");
-            let botaoIgual = document.querySelector("#igual");
-
-            let acumulador = "";
+        <main>
+            <h1>Calculadora</h1>
             
-            botaoUm.onclick = function() {
-                calculadora.display.innerText += 1;
-            }
+                <div class="calcBox">
+                    <div id="display"> </div>
 
-            botaoSoma.onclick = function() {
-                acumulador += calculadora.display.innerText;
-                acumulador += " + ";
-                calculadora.display.innerText = "";
-            }
+                        <div class=operações>
 
-            botaoIgual.onclick = function() {
-                //TODO: checar se existe conteúdo dentro do display
+                            <div class=numeros></div>          
+                                
+                                <button id="num7" class="button"> 7 </button>
+                                <button id="num8" class="button"> 8 </button>
+                                <button id="num9" class="button"> 9 </button>
 
-                //colocando conteúdo do display no acumulador
-                acumulador += calculadora.display.innerText;
-                //resolvendo conta (conteúdo acumulador)
-                let resultado = eval(acumulador);
-                //colocando no display o conteúdo do acumulador
-                calculadora.display.innerText = resultado;
-                // limpando o acumulador
-                acumulador = "";
+                                <button id="soma" class="button"> + </button>
+                                                   
+                                <button id="num4" class="button"> 4 </button>
+                                <button id="num5" class="button"> 5 </button>
+                                <button id="num6" class="button"> 6 </button>
 
-            }
+                                <button id="sub" class="button"> - </button>                         
+                                
+                                <button id="num1" class="button"> 1 </button>
+                                <button id="num2" class="button"> 2 </button>
+                                <button id="num3" class="button"> 3 </button>
 
-        </script>
+                                <button id="multi" class="button"> x </button>
+                                
+                                <button id="num0" class="button"> 0 </button>
+
+                                <button id="clear" class="button"> C </button>
+
+                                <button id="divs" class="button"> / </button>
+
+                                
+
+                            </div>
+
+                                <button id="igual" class="button"> = </button>
+                                
+
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+
+        <script src="calculadora.js"> </script>
 
     </body>
 
+    <footer>
+        <p> &#169 Resilia Educação </p> 
+        <p>2020</p>
+    </footer>
+
 </html>
+

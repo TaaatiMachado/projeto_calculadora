@@ -1,0 +1,135 @@
+    
+    body {
+        background-color: #312444;
+        margin-top: 3%;
+        text-align: center;
+       
+        
+    }
+    
+    main {
+        margin: 30px;
+        
+    }
+
+    h1 {
+        
+        text-align: right;
+        font-family: 'Pacifico', cursive;
+        font-size: 60px;
+        color: #fa86be;
+        margin-right: 550px;
+        border: 5px;
+        border-color: #312444 ;
+        
+        
+    }
+    
+    main p {
+        padding: 15px
+    }
+
+    
+    .calcBox {
+        display: inline-block;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        border: 4px;
+        border-color: #9aebed;
+        padding: 15px;
+        width: 340px;
+        height: 450px; 
+        margin: auto;
+        margin-top: 20px; 
+        margin-bottom: 30px;
+        background-color: #181222;
+        text-align: center;
+        border-style: dotted;
+    
+    }
+
+    #display {
+        border: 4px;
+        border-color: #9aebed;
+        color:  #181222;
+        width: 100%;
+        height: 45px;
+        font-size: 35px;
+        box-sizing: border-box;
+        background-color: blanchedalmond;
+        margin-bottom: 25px;
+        text-align: end;
+        padding: 10px;
+    }
+    
+    
+    .button {
+        
+        color: #fffcab;
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        display: inline-block;
+        font-size: 25px;
+        margin: 2px 2px;
+        background-color: #0d0a13;
+        cursor: pointer;
+    
+    }
+
+   #num0 {
+       width: 138px
+   }
+
+
+
+   #igual {
+       width: 84%;
+   }
+
+    footer {
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+        background-color: #fa86be;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        
+    }
+
+
+
+    @media (max-width: 1000px) { 
+
+        header {
+            display: flex;
+        }
+        
+        h1{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 70px;
+                padding: 5px;
+        }
+    
+        .histbox {
+                width: 100%;
+                box-sizing: border-box;
+        }
+        
+        div p {
+            width: auto;
+            
+            
+        }
+
+        
+          
+
+
+    
