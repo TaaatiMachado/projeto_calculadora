@@ -12,13 +12,23 @@
         
     }
 
-    h1 {
+    header {
+        display: inline;
         
+    }
+    img {
+        width: 70px;
+        align-items: baseline;
+    }
+
+    h1 {
+        display: inline-block;
         text-align: right;
         font-family: 'Pacifico', cursive;
         font-size: 60px;
         color: #fa86be;
-        margin-right: 550px;
+        margin: auto;
+        text-align: center;
         border: 5px;
         border-color: #312444 ;
         
@@ -102,33 +112,6 @@
     }
 
 
-
-    @media (max-width: 1000px) { 
-
-        header {
-            display: flex;
-        }
-        
-        h1{
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                font-size: 70px;
-                padding: 5px;
-        }
-    
-        .histbox {
-                width: 100%;
-                box-sizing: border-box;
-        }
-        
-        div p {
-            width: auto;
-            
-            
-        }
-
-        
           
 
 
